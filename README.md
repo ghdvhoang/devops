@@ -1,88 +1,18 @@
-# DevOps
+# DevOps – Bài tập của Dinh Viet Hoang
 
-## Lesson 1 – Thực hành các lệnh Linux cơ bản
+Mỗi buổi học có một folder riêng. Trong mỗi folder có `README.md` ghi đề bài và các lệnh đã thực hiện, kèm các file kết quả của buổi đó.
 
-### Yêu cầu
+| Buổi | Chủ đề | Folder |
+|------|--------|--------|
+| 2 | Thực hành các lệnh Linux cơ bản | [buoi-02-linux-co-ban](./buoi-02-linux-co-ban) |
+| 3 | _(đang làm)_ | |
 
-1. Tạo thư mục `~/devops/lesson1`.
-2. Di chuyển vào thư mục vừa tạo.
-3. Tạo file `hello_world.txt`.
-4. Mở file `hello_world.txt` bằng trình soạn thảo `nano` và viết vài dòng nội dung vào file.
-5. Dùng lệnh `cat` để hiển thị nội dung file ra terminal.
-
-### Các lệnh đã thực hiện
-
-#### 1. Tạo thư mục `~/devops/lesson1`
-
-```bash
-mkdir -p ~/devops/lesson1
-```
-
-- `mkdir`: tạo thư mục mới.
-- `-p`: tạo luôn thư mục cha (`~/devops`) nếu chưa tồn tại, không báo lỗi nếu thư mục đã có.
-
-Kiểm tra:
-
-```bash
-ls -ld ~/devops/lesson1
-```
-
-#### 2. Di chuyển vào thư mục vừa tạo
-
-```bash
-cd ~/devops/lesson1
-pwd
-```
-
-- `cd`: chuyển thư mục làm việc.
-- `pwd`: in ra đường dẫn thư mục hiện tại để xác nhận đã vào đúng thư mục.
-
-Kết quả (đường dẫn đầy đủ của `~/devops/lesson1`, ví dụ trên macOS):
+## Cấu trúc repo
 
 ```text
-/Users/<username>/devops/lesson1
-```
-
-#### 3. Tạo file `hello_world.txt`
-
-```bash
-touch hello_world.txt
-ls -l
-```
-
-- `touch`: tạo file rỗng (nếu file chưa tồn tại).
-- `ls -l`: liệt kê file trong thư mục để kiểm tra file đã được tạo.
-
-#### 4. Mở file bằng `nano` và viết nội dung
-
-```bash
-nano hello_world.txt
-```
-
-Trong `nano`:
-
-1. Gõ nội dung, ví dụ: `hello im Honag`
-2. Nhấn `Ctrl + O` rồi `Enter` để lưu file.
-3. Nhấn `Ctrl + X` để thoát khỏi `nano`.
-
-#### 5. Hiển thị nội dung file bằng `cat`
-
-```bash
-cat hello_world.txt
-```
-
-Kết quả:
-
-```text
-hello im Honag
-```
-
-### Tóm tắt toàn bộ lệnh
-
-```bash
-mkdir -p ~/devops/lesson1     # 1. Tạo thư mục
-cd ~/devops/lesson1           # 2. Di chuyển vào thư mục
-touch hello_world.txt         # 3. Tạo file
-nano hello_world.txt          # 4. Mở file bằng nano, viết nội dung, Ctrl+O -> Enter -> Ctrl+X
-cat hello_world.txt           # 5. Hiển thị nội dung file
+devops/
+├── README.md                  # Mục lục (file này)
+└── buoi-02-linux-co-ban/
+    ├── README.md              # Đề bài + các lệnh đã chạy
+    └── hello_world.txt        # File kết quả
 ```
